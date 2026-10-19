@@ -12,6 +12,7 @@ class BasicDesign extends StatelessWidget {
         centerTitle: true,
       ),
       body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: Column(
           children: [
             const Image(
@@ -24,7 +25,7 @@ class BasicDesign extends StatelessWidget {
             const _Buttons(),
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-              child: const Text('Non dolor sunt eiusmod voluptate aliquip sit ad consectetur mollit adipisicing. Proident esse sit elit voluptate et. Esse exercitation non officia elit enim tempor amet incididunt do laboris sunt ea. Do laboris proident minim ex. Lorem voluptate tempor cupidatat consectetur sint velit minim nisi cupidatat sit. Minim occaecat laborum nostrud ad aliqua et magna duis dolor commodo. Irure in amet qui eu quis labore do in aliqua amet fugiat enim amet occaecat.'),
+              child: const Text('Non dolor sunt eiusmod voluptate aliquip sit ad consectetur mollit adipisicing. Proident esse sit elit voluptate et. Esse exercitation non officia elit enim tempor amet incididunt do laboris sunt ea. Do laboris proident minim ex. Lorem voluptate tempor cupidatat consectetur sint velit minim nisi cupidatat sit. Minim occaecat laborum nostrud ad aliqua et magna duis dolor commodo. Irure in amet qui eu quis labore do in aliqua amet fugiat enim amet occaecat. Non dolor sunt eiusmod voluptate aliquip sit ad consectetur mollit adipisicing. Proident esse sit elit voluptate et. Esse exercitation non officia elit enim tempor amet incididunt do laboris sunt ea. Do laboris proident minim ex. Lorem voluptate tempor cupidatat consectetur sint velit minim nisi cupidatat sit. Minim occaecat laborum nostrud ad aliqua et magna duis dolor commodo. Irure in amet qui eu quis labore do in aliqua amet fugiat enim amet occaecat. Non dolor sunt eiusmod voluptate aliquip sit ad consectetur mollit adipisicing. Proident esse sit elit voluptate et. Esse exercitation non officia elit enim tempor amet incididunt do laboris sunt ea. Do laboris proident minim ex. Lorem voluptate tempor cupidatat consectetur sint velit minim nisi cupidatat sit. Minim occaecat laborum nostrud ad aliqua et magna duis dolor commodo. Irure in amet qui eu quis labore do in aliqua amet fugiat enim amet occaecat.'),
             )
             
           ],
