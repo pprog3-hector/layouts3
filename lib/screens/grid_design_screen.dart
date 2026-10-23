@@ -91,23 +91,28 @@ class _TarjetaCustom extends StatelessWidget {
       height: 160,
       width: 80,
       margin: const EdgeInsets.all(16),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(20),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-          child: Container(
-            color: Colors.black26,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                CircleAvatar(
-                  backgroundColor: color,
-                  radius: 30,
-                  child: Icon(icon, size: 30, color: Colors.black,),
-                ),
-                const SizedBox(height: 5,),
-                Text(nombre, style: const TextStyle(color: Colors.white, fontSize: 16),)
-              ],
+      child: GestureDetector(
+        onTap: () {
+          Navigator.pushNamed(context, '/basic');
+        },
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(20),
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+            child: Container(
+              color: Colors.black26,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  CircleAvatar(
+                    backgroundColor: color,
+                    radius: 30,
+                    child: Icon(icon, size: 30, color: Colors.black,),
+                  ),
+                  const SizedBox(height: 5,),
+                  Text(nombre, style: const TextStyle(color: Colors.white, fontSize: 16),)
+                ],
+              ),
             ),
           ),
         ),
